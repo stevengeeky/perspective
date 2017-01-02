@@ -1,0 +1,43 @@
+/* Required */
+html {
+    height:100%;    /* Prevent height fuck up */
+}
+
+body {
+    font-size:30px;
+    overflow:hidden;
+    font:40px Open Sans;
+}
+
+#display_board {
+    display:inline-block;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    transition:transform 1s;
+}
+#display_board, #display_board div {
+    position:absolute;
+    display:inline-block;
+}
+#display_board div {
+    left:50%;
+    top:50%;
+    color:lightgray;
+    transition:color 1s;
+}
+#display_board div.focused {
+    color:black;
+}
+
+/* Presentation Specific */
+
+/* */
+.item_x {
+    top:50%;
+    left:50%;
+    width:auto;
+    max-width:20%;
+    transform:none;
+}
